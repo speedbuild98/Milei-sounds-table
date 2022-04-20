@@ -153,8 +153,7 @@ h4{
 }
 .lion{
   position: relative;
-  width: 10%;
-  left: 45%;
+  width: 20%;
 }
 /*
 --- ARCADE BUTTON ---
@@ -404,3 +403,16 @@ a.button:active {
   background-color: #000000
 }
 
+.milei-mes{
+  background-color: #ffeb3bc8;
+}
+
+.milei-mes a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.milei-mes a:hover{
+  text-decoration: none;
+  color: #0059ffc8;
+}

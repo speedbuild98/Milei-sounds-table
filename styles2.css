@@ -81,7 +81,7 @@ img:hover{
     border-radius: 6px;
     height: 2em;
     bottom: 0;
-    width: 80%;
+    width: 50%;
     margin-bottom: 20px;
   }
   .cafecito img{
@@ -89,7 +89,7 @@ img:hover{
     justify-content: center;
     padding-right:4px;
     border: none;
-    width: 2.5em;
+    width: 2em;
     margin: 0in;
     box-shadow: none;
   }
