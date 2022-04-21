@@ -113,7 +113,7 @@ nav h1{
   text-shadow: 2px 2px 5px #fff;
   font-weight: bolder;
   font-size: var(--big-font-size);
-  text-shadow: 2px -2px 5px var(--n);
+  text-shadow: -2px 2px 5px var(--n);
   width: 0;
   overflow: hidden;
   white-space: nowrap;
