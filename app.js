@@ -151,7 +151,7 @@ function createButton(text, urlSound, id) {
 
 if ("serviceWorker" in navigator) {
 	// Include service worker for el Xokas to test PWA
-	if (window.location.href.includes("Xokas")) {
+	if (window.location.href.includes("Milei")) {
 		window.addEventListener("load", function() {
 			navigator.serviceWorker
 			  .register("./serviceWorker.js")
