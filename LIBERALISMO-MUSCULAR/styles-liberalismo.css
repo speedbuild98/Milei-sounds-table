@@ -113,8 +113,30 @@ nav h1{
   text-shadow: 2px 2px 5px #fff;
   font-weight: bolder;
   font-size: var(--big-font-size);
-  text-shadow: 2px 2px 10px var(--n);
+  text-shadow: 2px -2px 5px var(--n);
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2rem;
+  margin: 0 auto;
+  border-right: 0.1em solid var(--d);
+  animation: typing 4s steps(35) 1s 1 normal both, blink 1s steps(1) infinite;
 }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 /* The side navigation menu */
 .sidenav {
       height: 100%; /* 100% Full-height */
@@ -228,9 +250,9 @@ nav h1{
   animation: brillo 10s infinite;
 }
 @keyframes brillo {
-  0% {filter: drop-shadow(-2px 2px 2px var(--d));}
+  0% {filter: drop-shadow(-2px 2px 1px var(--d));}
   50% {filter: drop-shadow(-2px 2px 20px var(--d));}
-100% {filter: drop-shadow(-2px 2px 2px var(--d));}
+100% {filter: drop-shadow(-2px 2px 1px var(--d));}
 }
 
 .zyzz-tittle{
