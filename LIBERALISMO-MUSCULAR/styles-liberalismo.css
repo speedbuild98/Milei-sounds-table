@@ -247,12 +247,12 @@ nav h1{
 .zyzz{
   padding-top:1rem;
   filter: drop-shadow(-2px 2px 15px var(--d));
-  animation: brillo 10s infinite;
+  animation: brillo 5s infinite;
 }
 @keyframes brillo {
-  0% {filter: drop-shadow(-2px 2px 1px var(--d));}
+  0% {filter: drop-shadow(-2px 2px 5px var(--d));}
   50% {filter: drop-shadow(-2px 2px 20px var(--d));}
-100% {filter: drop-shadow(-2px 2px 1px var(--d));}
+100% {filter: drop-shadow(-2px 2px 5px var(--d));}
 }
 
 .zyzz-tittle{
