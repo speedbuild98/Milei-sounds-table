@@ -225,6 +225,10 @@ nav h1{
   color: var(--b);
 }
 
+p span .zyzz-title2{
+  display:none;
+}
+
 
 /*<------------CALCULADORAS------------>*/
 .titulos{
@@ -270,7 +274,7 @@ nav h1{
   color: var(--d);
 }
 
-/*<------------SCROLL-UP------------>*/
+/*<------------SCROLLUP------------>*/
 .scrollup{
   position: fixed;
   right: 1rem;
