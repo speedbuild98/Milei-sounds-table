@@ -157,9 +157,20 @@ nav h1{
       margin-left: 50px;
   }
 
+  .closebtn{
+    animation: wiggle 4s infinite;
+  }
   .sidenav .closebtn:hover{
     border: none;
-    color: var(--b)
+    color: var(--b);
+    cursor: pointer;
+    }
+    @keyframes wiggle {
+      0% { transform: rotate(0deg); }
+     80% { transform: rotate(0deg); }
+     85% { transform: rotate(5deg); }
+     95% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
   }
 
 
@@ -213,8 +224,13 @@ nav h1{
 
 .zyzz{
   padding-top:1rem;
-  margin: 0 auto;
   filter: drop-shadow(-2px 2px 15px var(--d));
+  animation: brillo 10s infinite;
+}
+@keyframes brillo {
+  0% {filter: drop-shadow(-2px 2px 2px var(--d));}
+  50% {filter: drop-shadow(-2px 2px 20px var(--d));}
+100% {filter: drop-shadow(-2px 2px 2px var(--d));}
 }
 
 .zyzz-tittle{
