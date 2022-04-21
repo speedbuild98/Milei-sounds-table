@@ -223,8 +223,8 @@ nav h1{
 
 .input-imc, #calc,#calc-macros,.input-macros{
       border:none;
-      background-color:var(--v);
-      border:2px solid var(--b);
+      background-color:var(--d);
+      border:2px solid var(--n);
       font-weight: 500;
       border-radius: 4px;
 }
