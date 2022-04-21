@@ -93,8 +93,8 @@ img {
 /*<------------------NAV------------------>*/
 nav{
   background-color: var(--v);
-  border-bottom: 5px solid var(--b);
-  border-top: 5px solid var(--b);
+  border-bottom: 5px solid var(--d);
+  border-top: 5px solid var(--d);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,6 +205,17 @@ nav h1{
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
   }
+/*<------------INICIO------------>*/
+.inicio{
+  text-align: center;
+  background-color: var(--n);
+}
+
+.zyzz{
+  margin: 0 auto;
+  filter: drop-shadow(-2px 2px 15px var(--d));
+}
+
 
 /*<------------CALCULADORAS------------>*/
 .titulos{
@@ -236,12 +247,16 @@ nav h1{
    font-weight: 600;
    background-color: var(--d);
  }
-#calc:hover{
-  background-color: #6abcc0;
+#calc:hover,#calc-macros:hover{
+  background-color: var(--d2);
 }
 
 ::placeholder{
   color: #00000040;
   text-transform: uppercase;
   font-size: var(--small-font-size);
+}
+
+#calorias,#proteina,#grasa,#fibra{
+  color: var(--d);
 }
