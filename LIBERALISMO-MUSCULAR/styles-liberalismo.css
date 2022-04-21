@@ -98,12 +98,21 @@ nav{
   justify-content: center;
   align-items: center;
   text-align: center;
+  /*background-image: url(https://c.tenor.com/UtBHGk-WEg0AAAAd/milei-javier-milei.gif);*/
+  background-size: cover;
+  background-position: center;
+  height:250px;
+  background-repeat: no-repeat;
 }
 
 nav h1{
+  color: var(--d);
   padding: 0;
   text-transform: uppercase;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 2px 2px 5px #fff;
+  font-weight: bolder;
+  font-size: var(--big-font-size);
+  text-shadow: 2px 2px 10px var(--n);
 }
 /* The side navigation menu */
 .sidenav {
@@ -161,12 +170,29 @@ nav h1{
     top: 0;
     right: 0;
     transition: .5s;
-  }
+}
+
 
   .uil-apps:hover{
     color: var(--d);
     cursor: pointer;
   }
+  @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.uil-apps {
+  display: inline-block;
+  animation: wiggle 2.5s infinite;
+}
+
+.uil-apps:hover {
+  animation: none;
+}
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
       transition: margin-left .5s;
