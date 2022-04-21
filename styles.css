@@ -416,3 +416,14 @@ a.button:active {
   text-decoration: none;
   color: #0059ffc8;
 }
+
+.liberalismo{
+  font-weight: 700;
+  width:max-content;
+  display: flex;
+  border-radius:8px;
+  padding: 4px;
+  justify-content: center;
+  text-align: center;
+  margin: 20px auto;
+}
