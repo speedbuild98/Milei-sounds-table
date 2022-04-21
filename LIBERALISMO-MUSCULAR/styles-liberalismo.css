@@ -212,8 +212,17 @@ nav h1{
 }
 
 .zyzz{
+  padding-top:1rem;
   margin: 0 auto;
   filter: drop-shadow(-2px 2px 15px var(--d));
+}
+
+.zyzz-tittle{
+  background-color: var(--d);
+}
+
+.zyzz-text{
+  color: var(--b);
 }
 
 
@@ -260,3 +269,5 @@ nav h1{
 #calorias,#proteina,#grasa,#fibra{
   color: var(--d);
 }
+
+
