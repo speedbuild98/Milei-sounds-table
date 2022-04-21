@@ -34,13 +34,13 @@
 	calorias = document.getElementById("calorias");
 	proteina = document.getElementById("proteina");
 	grasa = document.getElementById("grasa");
-	fibra = document.getElementById("fibra");
 
 	calcularMacros.onclick = function(){
 		funcion1();
 		funcion2();
 		calcularProteina();
 		calcularGrasa();
+		calcularCarbohidratos();
 	  }
 
 	function funcion1(){
@@ -78,8 +78,15 @@
 
 	function calcularGrasa(){
 		if(kgMacros.value!="" && altura.value!="" && edad.value!=""){
-			grasax = (caloriasx*.3);
+			grasax = ((caloriasx*.3)/9);
 			grasa.innerHTML = grasax.toFixed(2)+" grs"
+		}
+	}
+
+	function calcularCarbohidratos(){
+		if(kgMacros.value!="" && altura.value!="" && edad.value!=""){
+			carbohidratosx = ((caloriasx/2)/4);
+			carbohidratos.innerHTML = carbohidratosx.toFixed(2)+" grs"
 		}
 	}
 
