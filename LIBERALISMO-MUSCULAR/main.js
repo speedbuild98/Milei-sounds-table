@@ -39,6 +39,8 @@
 	calcularMacros.onclick = function(){
 		funcion1();
 		funcion2();
+		calcularProteina();
+		calcularGrasa();
 	  }
 
 	function funcion1(){
@@ -59,15 +61,29 @@
 
 	function funcion2(){
 		if(seleccionObjetivo.value==="Subir de peso"){
-			calorias.innerHTML = caloriasx.toFixed(2) * 1.2;					
+			calorias.innerHTML = caloriasx.toFixed(2) * 1.2+" kcal";					
 		} else if(seleccionObjetivo.value==="Bajar de peso"){
-			calorias.innerHTML = caloriasx.toFixed(2) * .8;
+			calorias.innerHTML = caloriasx.toFixed(2) * .8+" kcal";
 		} else if(seleccionSexo.value==="Helicoptero Apache"){
-			calorias.innerHTML = caloriasx.toFixed(2);
-      	} else(calorias.innerHTML = caloriasx);
+			calorias.innerHTML = caloriasx.toFixed(2)+" kcal";
+      	} else(calorias.innerHTML = caloriasx+" kcal");
 	}
 
+	function calcularProteina(){
+		if(kgMacros.value!="" && altura.value!="" && edad.value!=""){
+			proteinax = 2*kgMacros.value;
+			proteina.innerHTML = proteinax.toFixed(2)+" grs"
+		}
+	}
 
+	function calcularGrasa(){
+		if(kgMacros.value!="" && altura.value!="" && edad.value!=""){
+			grasax = (caloriasx*.3);
+			grasa.innerHTML = grasax.toFixed(2)+" grs"
+		}
+	}
+
+	
 
 
 /*==========================================MENU SIDE NAV==========================================*/
