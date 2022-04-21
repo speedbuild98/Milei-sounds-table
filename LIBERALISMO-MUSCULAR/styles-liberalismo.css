@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap');
+:root{
+    /*========== fuente ==========*/
+    --body-font: 'Akshar', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+    /*========== colores ==========*/
+    --n: #222831;
+    --g: #393E46;
+    --v: #00ADB5;
+    --b: #eeeeee;
+    --d: #F9DA1B;
+ }
+
+ /* Font size for large devices */
+@media screen and (min-width: 968px) {
+      :root {
+          --big-font-size: 3rem;
+          --h1-font-size: 2.25rem;
+          --h2-font-size: 1.5rem;
+          --h3-font-size: 1.25rem;
+          --normal-font-size: 1rem;
+          --small-font-size: .875rem;
+          --smaller-font-size: .813rem;
+      }
+  }   
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Akshar', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--n);
+}
+
+h1, h2, h3, h4 {
+  color: var(--d);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*<------------------NAV------------------>*/
+nav{
+  background-color: var(--v);
+  border-bottom: 5px solid var(--b);
+  border-top: 5px solid var(--b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav h1{
+  padding: 0;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px black;
+}
+/* The side navigation menu */
+.sidenav {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0;
+      right: 0;
+      background-color: var(--n); /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      border-left: 3px solid var(--d);
+  }
+  .sidenav .uil{
+    padding-right:10px;
+  }
+  /* The navigation menu links */
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: var(--b);
+      display: block;
+      transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover, .offcanvas a:focus{
+      color: var(--d);
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+      color:  var(--d);
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+  .sidenav .closebtn:hover{
+    border: none;
+    color: var(--b)
+  }
+
+
+  .uil-apps{
+    font-size: var(--big-font-size);
+    color: var(--b);
+    position: relative;
+    text-shadow: 2px 2px 3px black;
+    top: 0;
+    right: 0;
+    transition: .5s;
+  }
+
+  .uil-apps:hover{
+    color: var(--d);
+    cursor: pointer;
+  }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+      transition: margin-left .5s;
+      padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+  }
+
+/*<------------CALCULADORA IMC------------>*/
+.titulos{
+      margin-top: 2rem;
+      color: var(--b);
+      background-color: var(--g);
+      padding:10px;
+      text-shadow: 2px 2px 5px black;
+}
+.calculadora-imc{
+  width:100%;
+  height:100%;
+}
+ .titulos h1{
+  color: var(--b);
+}
+
+.input-imc, #calc,#calc-macros,.input-macros{
+      border:none;
+      background-color:var(--v);
+      border:2px solid var(--b);
+      font-weight: 500;
+      border-radius: 4px;
+}
+ #calc,#calc-macros{
+   margin-bottom: 1rem;
+   padding:4px;
+ }
+#calc:hover{
+  background-color: #6abcc0;
+}
+/*<------------CALCULADORA MACROS------------>*/
