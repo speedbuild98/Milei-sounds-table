@@ -38,6 +38,7 @@
     --v: #00ADB5;
     --b: #eeeeee;
     --d: #F9DA1B;
+    --d2: #ffec70;
  }
 
  /* Font size for large devices */
@@ -205,7 +206,7 @@ nav h1{
       .sidenav a {font-size: 18px;}
   }
 
-/*<------------CALCULADORA IMC------------>*/
+/*<------------CALCULADORAS------------>*/
 .titulos{
       margin-top: 2rem;
       color: var(--b);
@@ -223,16 +224,24 @@ nav h1{
 
 .input-imc, #calc,#calc-macros,.input-macros{
       border:none;
-      background-color:var(--d);
+      background-color:var(--d2);
       border:2px solid var(--n);
       font-weight: 500;
       border-radius: 4px;
+      text-transform: uppercase;
 }
  #calc,#calc-macros{
    margin-bottom: 1rem;
    padding:4px;
+   font-weight: 600;
+   background-color: var(--d);
  }
 #calc:hover{
   background-color: #6abcc0;
 }
-/*<------------CALCULADORA MACROS------------>*/
+
+::placeholder{
+  color: #00000040;
+  text-transform: uppercase;
+  font-size: var(--small-font-size);
+}
