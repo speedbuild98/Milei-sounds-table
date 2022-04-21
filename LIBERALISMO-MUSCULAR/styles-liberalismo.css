@@ -270,4 +270,47 @@ nav h1{
   color: var(--d);
 }
 
+/*<------------SCROLL-UP------------>*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: #ffeb3b;
+  opacity: .6;
+  padding: 0 .3rem;
+  border-radius: .4rem;
+  z-index: 10;
+  transition: .4s;
+}
 
+.scrollup:hover{
+  opacity: 1;
+}
+.scrollup a:hover{
+  border: none;
+}
+.scrollup__icon{
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+/* Show scroll */
+.show-scroll{
+  bottom: 5rem;
+}
+
+::-webkit-scrollbar{
+  width: .60rem;
+  background-color: #00000040;
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #ffeb3bc8;
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #ffeb3b;
+  border-radius: .5rem;
+}
