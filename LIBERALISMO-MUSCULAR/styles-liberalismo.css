@@ -99,7 +99,7 @@ nav{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(https://c.tenor.com/UtBHGk-WEg0AAAAd/milei-javier-milei.gif);
+  background-image: url(/LIBERALISMO-MUSCULAR/img/banner.jpg);
   background-size: cover;
   background-position: center;
   height:250px;
@@ -120,7 +120,7 @@ nav h1{
   font-size: 2rem;
   margin: 0 auto;
   border-right: 0.1em solid var(--d);
-  animation: typing 4s steps(35) 1s 1 normal both, blink 1s steps(1) infinite;
+  animation: typing 2s steps(15) 1s 1 normal both, blink 1s steps(1) infinite;
 }
 @keyframes typing {
   from {
@@ -354,5 +354,4 @@ p span .zyzz-title2{
 
 ::-webkit-scrollbar-thumb:hover{
   background-color: #ffeb3b;
-  border-radius: .5rem;
-}
+  border-radius: .5rem; }
