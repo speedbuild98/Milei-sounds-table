@@ -3,7 +3,7 @@
 	"sounds" : [
 		{ 
 			"text" : "Digamos" ,
-			"soundURL" : "https://github.com/speedbuild98/Milei-sounds-table/blob/main/sounds/Digamos%20o%20sea.mp3"
+			"soundURL" : "https://github.com/speedbuild98/Milei-sounds-table/blob/main/sounds/Digamos%20o%20sea.mp3?raw=true"
 		},
 		{ 
 			"text" : "Carguitos" ,
